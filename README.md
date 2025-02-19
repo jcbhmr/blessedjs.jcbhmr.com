@@ -10,6 +10,11 @@
   TODO: Add image here
 </p>
 
+<p align=center>
+  <a href="https://github.com/jcbhmr/blessedjs.jcbhmr.com">GitHub</a>
+  | <a href="https://blessedjs.jcbhmr.com/">Website</a>
+</p>
+
 🎯 Targetted recommendations for specific problem areas like Benchmarking, UUIDs, Toolchain management, etc. \
 👨‍👩‍👧‍👦 [Open an issue to nominate a blessed library!](https://github.com/jcbhmr/blessedjs.jcbhmr.com/issues)
 
