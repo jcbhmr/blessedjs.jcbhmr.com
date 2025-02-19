@@ -1,3 +1,8 @@
+<p align=center>
+  <a href="https://github.com/jcbhmr/blessedjs.jcbhmr.com">GitHub</a>
+  | <a href="https://blessedjs.jcbhmr.com/">Website</a>
+</p>
+
 The JavaScript standard library doesn't cover everything. This "Blessed JavaScript" project curates the best solution for some common problems that fall outside the realm of the JavaScript standard library.
 
 For a longer list of many other awesome JavaScript libraries, tools, and utilities check out [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) and [sorrycc/awesome-javascript](https://github.com/sorrycc/awesome-javascript).
