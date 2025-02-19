@@ -10,9 +10,8 @@
   TODO: Add image here
 </p>
 
-⭐ Recommend **popular and widespread** JavaScript libraries. Goal is to remain mostly unbiased. \
-👨‍👩‍👧‍👦 Based on community consensus. [Open an issue to nominate a blessed library!](https://github.com/jcbhmr/blessedjs.jcbhmr.com/issues) \
-🎯 Targetted recommendations for specific problem areas like Benchmarking, UUIDs, Toolchain management, etc.
+🎯 Targetted recommendations for specific problem areas like Benchmarking, UUIDs, Toolchain management, etc. \
+👨‍👩‍👧‍👦 [Open an issue to nominate a blessed library!](https://github.com/jcbhmr/blessedjs.jcbhmr.com/issues)
 
 ## Development
 
