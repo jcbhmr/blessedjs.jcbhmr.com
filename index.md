@@ -1,4 +1,8 @@
 <p align=center>
+  <img width=550 src="./media/pope-blessing-js-meme.png">
+</p>
+
+<p align=center>
   <a href="https://github.com/jcbhmr/blessedjs.jcbhmr.com">GitHub</a>
   | <a href="https://blessedjs.jcbhmr.com/">Website</a>
 </p>
