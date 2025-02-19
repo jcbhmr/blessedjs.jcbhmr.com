@@ -71,7 +71,7 @@ If you're using Bun it comes with its own [`bun pm`](https://bun.sh/docs/cli/pm)
 
 ### Testing
 
-Use [`node:test`](https://nodejs.org/api/test.html) and `node --test`. It works with Node.js, Deno, and Bun. Use [Vitest](https://vitest.dev/) if you need more mocking features. Vitest also lets you write [Playwright](https://playwright.dev/) tests.
+Use [`node:test`](https://nodejs.org/api/test.html). It works with Node.js, Deno, and Bun. Use [Vitest](https://vitest.dev/) if you need more mocking features. Vitest also lets you write [Playwright](https://playwright.dev/) tests.
 
 If you're using Deno it comes with its own [`deno test` toolset](https://docs.deno.com/runtime/fundamentals/testing/).
 
