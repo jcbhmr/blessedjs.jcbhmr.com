@@ -1,5 +1,7 @@
 The JavaScript standard library doesn't cover everything. This "Blessed JavaScript" project curates the best solution for some common problems that fall outside the realm of the JavaScript standard library.
 
+For a longer list of many other awesome JavaScript libraries, tools, and utilities check out [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) and [sorrycc/awesome-javascript](https://github.com/sorrycc/awesome-javascript).
+
 #### Random numbers
 
 Use [`crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues). It's available in Node.js, Deno, Bun, and browsers.
@@ -56,7 +58,7 @@ If you're using Deno it comes with its own [`deno lint`](https://docs.deno.com/r
 
 #### Package managers
 
-Use the default [npm](https://www.npmjs.com/) unless you need [pnpm](https://pnpm.io/)'s extra features.
+Use the default [npm](https://www.npmjs.com/) unless you need [pnpm](https://pnpm.io/)'s extra features like dependency patching.
 
 If you're using Deno it comes with its own [`deno add` and friends](https://deno.com/blog/your-new-js-package-manager).
 
