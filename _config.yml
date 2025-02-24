@@ -1,2 +1,5 @@
+remote_theme: sighingnow/jekyll-gitbook@a7d876936fe650c46eaf9eca92dc7afe0f1e1f17 # Jul 29, 2024
 markdown: GFM
+permalink: pretty
 title: Blessed JavaScript
+description: 🙏 Unofficial blessed libraries for common tasks in JavaScript
