@@ -2,3 +2,8 @@
 .summary > .divider:nth-child(2) {
   display: none;
 }
+
+/* Remove the Twitter, Facebook, and Share buttons from the header. */
+.book-header > .btn.js-toolbar-action:has(> .fa-twitter, > .fa-facebook, > .fa-share-alt) {
+  display: none;
+}
