@@ -17,9 +17,9 @@ Some things are different if you're using the Deno ecosystem. This page highligh
 
 [`Deno.makeTempFile()`](https://docs.deno.com/examples/temporary_files/)
 
-<tr><th align=left>Toolchain version management<td>
+<tr><th align=left>Toolchain management<td>
 
-None. Always use the latest Deno version.
+[`deno upgrade`](https://docs.deno.com/runtime/reference/cli/upgrade/)
 
 <tr><th align=left>Code formatting<td>
 
