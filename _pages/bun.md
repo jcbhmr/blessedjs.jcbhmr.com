@@ -8,7 +8,7 @@ title: Bun
 
 Some things are different if you're using the Bun ecosystem. This page highlights those alternative blessed tools for the Bun ecosystem.
 
-<table style="width: 100%">
+<table style="table-layout: fixed; width: 100%;">
 <tr><th align=left>Toolchain management<td>
 
 [`bun upgrade`](https://bun.sh/docs/installation#upgrading)
