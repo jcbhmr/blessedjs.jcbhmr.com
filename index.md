@@ -80,10 +80,6 @@ Use [pnpm](https://pnpm.io/) if you need its extra features.
 
 Use [Vitest](https://vitest.dev/) if you need its extra features.
 
-<tr><th align=left>Testing<td>
-
-[Vitest](https://vitest.dev/)
-
 </table>
 
 ## Math & science
