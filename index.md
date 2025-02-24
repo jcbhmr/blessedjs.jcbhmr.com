@@ -8,7 +8,7 @@ For a longer list of many other awesome JavaScript libraries, tools, and utiliti
 
 ## General
 
-<table style="width: 100%">
+<table style="table-layout: fixed; width: 100%;">
 <tr><th align=left>Random numbers<td>
 
 [`crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
