@@ -7,7 +7,8 @@
 🙏 Unofficial blessed libraries for common tasks in JavaScript
 
 <p align=center>
-  <img width=550 src="./media/pope-blessing-js-meme.png">
+  <img width=550 src="./media/TODO">
+  TODO: Add image
 </p>
 
 <p align=center>
