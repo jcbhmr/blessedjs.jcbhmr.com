@@ -1,5 +1,6 @@
 <p align=center>
-  <img width=550 src="./media/pope-blessing-js-meme.png">
+  <img width=550 src="./media/TODO.png">
+  TODO: Add image
 </p>
 
 <p align=center>
