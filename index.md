@@ -43,7 +43,7 @@ _TODO_
 
 ## Tooling
 
-<table style="width: 100%">
+<table style="table-layout: fixed; width: 100%;">
 <tr><th align=left>JavaScript runtimes<td>
 
 [Node.js](https://nodejs.org/) is the most popular.
@@ -88,7 +88,7 @@ Use [Vitest](https://vitest.dev/) if you need its extra features.
 
 ## Math & science
 
-<table style="width: 100%">
+<table style="table-layout: fixed; width: 100%;">
 <tr><th align=left>Big decimal<td>
 
 [js-big-decimal](https://www.npmjs.com/package/js-big-decimal)
