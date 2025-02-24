@@ -2,3 +2,14 @@ remote_theme: sighingnow/jekyll-gitbook@a7d876936fe650c46eaf9eca92dc7afe0f1e1f17
 permalink: pretty
 title: Blessed JavaScript
 description: 🙏 Unofficial blessed libraries for common tasks in JavaScript
+# The jekyll-gitbook theme requires other pages to be listed in a collection. They can't be top-level.
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: post
