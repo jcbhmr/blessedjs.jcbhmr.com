@@ -24,4 +24,4 @@
 
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=Markdown&logoColor=FFFFFF)
 
-This project uses plain Kramdown-flavored Markdown in `index.md` to publish a Jekyll-based GitHub Pages site to https://blessedjs.jcbhmr.com/. There's not really a good way to preview things locally right now.
+This project uses plain GitHub-flavored Markdown. It's a Jekyll-based GitHub Pages site to https://blessedjs.jcbhmr.com/. There's not really a good way to preview things locally right now.
