@@ -24,4 +24,4 @@
 
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=Markdown&logoColor=FFFFFF)
 
-This project uses plain GitHub-flavored Markdown in `index.md` to publish a single-page GitHub Pages site to https://blessedjs.jcbhmr.com/. You can preview `index.md` using the builtin GitHub web UI "Preview" tab when editing `index.md`.
+This project uses plain Kramdown-flavored Markdown in `index.md` to publish a single-page GitHub Pages site to https://blessedjs.jcbhmr.com/. There's not really a good way to preview things locally right now.
