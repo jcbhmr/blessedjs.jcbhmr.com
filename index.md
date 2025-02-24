@@ -11,7 +11,9 @@ For a longer list of many other awesome JavaScript libraries, tools, and utiliti
 <table style="table-layout: fixed; width: 100%;">
 <tr><th align=left>Random numbers<td>
 
-[`crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
+[`crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) for truly random numbers
+
+[`Math.random()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) for pseudo-random numbers
 
 <tr><th align=left>Time and date<td>
 
