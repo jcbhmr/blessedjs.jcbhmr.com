@@ -1,0 +1,3 @@
+.summary > .divider:nth-child(2) {
+  display: none;
+}
