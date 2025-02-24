@@ -1,87 +1,96 @@
 ---
-title: General
+title: Blessed JavaScript
 ---
 
 The JavaScript standard library doesn't cover everything. This "Blessed JavaScript" project curates the best solution for some common problems that fall outside the realm of the JavaScript standard library.
 
 For a longer list of many other awesome JavaScript libraries, tools, and utilities check out [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) and [sorrycc/awesome-javascript](https://github.com/sorrycc/awesome-javascript).
 
-## Random numbers
+## General
 
-Use [`crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues). It's available in Node.js, Deno, Bun, and browsers.
+<table style="width: 100%">
+<tr><th align=left>Random numbers<td>
 
-## Time and date
+[`crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues)
 
-Use the [Temporal API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal) if you can. Right now it doesn't have universal support so you'll need a polyfill like [temporal-polyfill](https://www.npmjs.com/package/temporal-polyfill).
+<tr><th align=left>Time and date<td>
 
-## UUIDs
+[Temporal API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal) via [temporal-polyfill](https://www.npmjs.com/package/temporal-polyfill)
 
-If you only need to generate v4 UUIDs then use [`crypto.randomUUID()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID). It's available in Node.js, Deno, Bun, and browsers. If you need something more comprehensive then use [uuid](https://www.npmjs.com/package/uuid).
+<tr><th align=left>UUIDs<td>
 
-## Temporary files
+[`crypto.randomUUID()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID) to generate v4 UUIDs.
 
-Use [tempy](https://www.npmjs.com/package/tempy).
+[uuid](https://www.npmjs.com/package/uuid) for comprehensive generation and parsing.
 
-## Compression & decompression
+<tr><th align=left>Temporary files<td>
 
-Use the [Compression Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API). It's available in Node.js, Deno, Bun, and browsers.
+[tempy](https://www.npmjs.com/package/tempy)
 
-## HTTP requests
+<tr><th align=left>Compression & decompression<td>
 
-Use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). There's no need to use node-fetch anymore; Node.js, Deno, Bun, and browsers all universally support fetch.
+[Compression Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API)
 
-## Logging
+<tr><th align=left>HTTP requests<td>
 
-TODO
+[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
-## JavaScript runtimes
+<tr><th align=left>Logging<td>
 
-The most popular desktop JavaScript runtime is [Node.js](https://nodejs.org/). [Deno](https://deno.com/) and [Bun](https://bun.sh/) offer more comprehensive Node.js-compatible toolchains if you prefer a more all-in-one toolkit than Node.js provides.
+_TODO_
 
-## Toolchain version management
+</table>
 
-The most popular Node.js version manager is [nvm](https://github.com/nvm-sh/nvm) for Linux & macOS. [nvm-windows](https://github.com/coreybutler/nvm-windows) is a similar popular project for Windows users.
+## Tooling
 
-## Code formatting
+<table style="width: 100%">
+<tr><th align=left>JavaScript runtimes<td>
 
-Use [Biome](https://biomejs.dev/) which is like [Prettier](https://prettier.io/) but faster.
+[Node.js](https://nodejs.org/) is the most popular.
 
-If you're using Deno it comes with its own [`deno fmt`](https://docs.deno.com/runtime/reference/cli/fmt/).
+[Deno](https://deno.com/) and [Bun](https://bun.sh/) offer more comprehensive Node.js-compatible toolchains. See the [Deno](./deno/) and [Bun](./bun/) pages for more ecosystem-specific information.
 
-## Type checking
+<tr><th align=left>Toolchain management<td>
 
-Use [TypeScript](https://www.typescriptlang.org/).
+[nvm](https://github.com/nvm-sh/nvm) for Linux & macOS.
 
-If you're using Deno it comes with its own [`deno check`](https://docs.deno.com/runtime/reference/cli/check/).
+[nvm-windows](https://github.com/coreybutler/nvm-windows) for Windows.
 
-## Linting
+<tr><th align=left>Code formatting<td>
 
-Prefer zero-config [Biome](https://biomejs.dev/). If you need to write custom rules, use [ESLint](https://eslint.org/).
+[Biome](https://biomejs.dev/)
 
-If you're using Deno it comes with its own [`deno lint`](https://docs.deno.com/runtime/reference/cli/lint/).
+<tr><th align=left>Type checking<td>
 
-## Package managers
+[TypeScript](https://www.typescriptlang.org/)
 
-Use the default [npm](https://www.npmjs.com/) unless you need [pnpm](https://pnpm.io/)'s extra features like dependency patching.
+<tr><th align=left>Linting<td>
 
-If you're using Deno it comes with its own [`deno add` and friends](https://deno.com/blog/your-new-js-package-manager).
+[Biome](https://biomejs.dev/)
 
-If you're using Bun it comes with its own [`bun pm`](https://bun.sh/docs/cli/pm).
+<tr><th align=left>Package managers<td>
 
-## Testing
+[npm](https://www.npmjs.com/)
 
-Use [`node:test`](https://nodejs.org/api/test.html). It works with Node.js, Deno, and Bun. Use [Vitest](https://vitest.dev/) if you need more mocking features. Vitest also lets you write [Playwright](https://playwright.dev/) tests.
+Use [pnpm](https://pnpm.io/) if you need its extra features.
 
-If you're using Deno it comes with its own [`deno test` toolset](https://docs.deno.com/runtime/fundamentals/testing/).
+<tr><th align=left>Testing<td>
 
-If you're using Bun it comes with its own [`bun test` toolset](https://bun.sh/docs/cli/test).
+[`node:test`](https://nodejs.org/api/test.html)
 
-## Benchmarking
+Use [Vitest](https://vitest.dev/) if you need its extra features.
 
-Use [Vitest](https://vitest.dev/).
+<tr><th align=left>Testing<td>
 
-If you're using Deno it comes with its own [`deno bench` toolset](https://docs.deno.com/runtime/fundamentals/testing/).
+[Vitest](https://vitest.dev/)
 
-## Big decimal
+</table>
 
-Use [js-big-decimal](https://www.npmjs.com/package/js-big-decimal).
+## Math & science
+
+<table style="width: 100%">
+<tr><th align=left>Big decimal<td>
+
+[js-big-decimal](https://www.npmjs.com/package/js-big-decimal)
+
+</table>
