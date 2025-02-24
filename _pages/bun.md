@@ -9,9 +9,9 @@ title: Bun
 Some things are different if you're using the Bun ecosystem. This page highlights those alternative blessed tools for the Bun ecosystem.
 
 <table style="width: 100%">
-<tr><th align=left>Toolchain version management<td>
+<tr><th align=left>Toolchain management<td>
 
-None. Always use the latest Bun version.
+[`bun upgrade`](https://bun.sh/docs/installation#upgrading)
 
 <tr><th align=left>Package manager<td>
 
