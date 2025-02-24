@@ -1,3 +1,4 @@
+/* Remove the divider between the home page and the rest of the pages */
 .summary > .divider:nth-child(2) {
   display: none;
 }
