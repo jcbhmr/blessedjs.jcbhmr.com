@@ -8,7 +8,7 @@ title: Deno
 
 Some things are different if you're using the Deno ecosystem. This page highlights those alternative blessed tools for the Deno ecosystem.
 
-<table style="width: 100%">
+<table style="table-layout: fixed; width: 100%;">
 <tr><th align=left>Time and date<td>
 
 [Temporal API](https://deno.com/blog/v1.40)
