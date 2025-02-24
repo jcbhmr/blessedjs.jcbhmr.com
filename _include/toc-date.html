@@ -46,6 +46,9 @@
                 {% endif %}
             </li>
 
+            <!-- CHANGE: Remove the divider -->
+            <!-- <li class="divider"></li> -->
+
             {% if site.ordered_collections %}
                 {% for label in site.ordered_collections %}
                     {% assign collection = site.collections | where: "label", label | first %}
