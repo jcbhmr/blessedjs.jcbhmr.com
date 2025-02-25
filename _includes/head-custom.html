@@ -1,0 +1,40 @@
+<!--
+https://github.com/pages-themes/primer/blob/master/_includes/head-custom.html
+MIT License
+
+CHANGES:
+- Added custom CSS
+-->
+
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+{% include head-custom-google-analytics.html %}
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
+
+<!-- CHANGE: Added custom CSS -->
+<style>
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+table th {
+  text-align: left;
+}
+table tr:first-child th {
+  width: 25%;
+}
+@media (max-width: 900px) {
+  table tr:first-child th {
+    width: 100%;
+  }
+  table tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
+</style>
+
+<!-- end custom head snippets -->
