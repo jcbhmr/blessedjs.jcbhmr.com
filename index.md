@@ -257,12 +257,3 @@ Globber that deals with `.gitignore` too.
 The most complete file & directory watcher.
 
 </table>
-
-
-<footer style="margin-top: 3rem;">
-<p align=center style="font-size: smaller;">
-  <a href="https://github.com/jcbhmr/blessedjs.jcbhmr.com/blob/main/LICENSE">Creative Commons Zero v1.0 Universal License</a><br>
-  Made with ❤️ by <a href="https://jcbhmr.com/">Jacob Hummer</a><br>
-  <a href="https://github.com/jcbhmr/blessedjs.jcbhmr.com">Source code on GitHub.</a> Contributions welcome.
-</p>
-</footer>
