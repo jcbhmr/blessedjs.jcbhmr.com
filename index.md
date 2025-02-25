@@ -7,6 +7,9 @@ table {
   table-layout: fixed;
   width: 100%;
 }
+table th {
+  text-align: left;
+}
 table tr:first-child th {
   width: 25%;
 }
