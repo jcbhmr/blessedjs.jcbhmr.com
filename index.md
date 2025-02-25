@@ -1,11 +1,12 @@
 ---
 title: Blessed JavaScript
 ---
-
 <!--
 NOTE: Custom CSS is in `_includes/head-custom.html` since the Markdown parser
 that GitHub Pages uses doesn't like <style> tags in Markdown documents.
 -->
+
+# Blessed JavaScript
 
 **Sometimes you need an npm package.** This list of "blessed" JavaScript npm packages (and other tools) helps you quickly find the best one for common use cases.
 
