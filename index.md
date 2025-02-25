@@ -2,42 +2,77 @@
 title: Blessed JavaScript
 ---
 
-The JavaScript standard library doesn't cover everything. This "Blessed JavaScript" project curates the best solution for some common problems that fall outside the realm of the JavaScript standard library.
+<style>
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+table tr:first-child th {
+  width: 25%;
+}
+@media (max-width: 900px) {
+  table tr:first-child th {
+    width: 100%;
+  }
+  table tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
+</style>
 
-For a longer list of many other awesome JavaScript libraries, tools, and utilities check out [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) and [sorrycc/awesome-javascript](https://github.com/sorrycc/awesome-javascript).
+**Sometimes you need an npm package.** This list of "blessed" JavaScript npm packages (and other tools) helps you quickly find the best one for common use cases.
+
+📚 Check out [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) and [sorrycc/awesome-javascript](https://github.com/sorrycc/awesome-javascript) for more comprehensive lists.
 
 ## General
 
-<table style="table-layout: fixed; width: 100%;">
-<tr><th align=left>Random numbers<td>
+<table>
+<tr><th>Random numbers<td>
 
-[`crypto.getRandomValues()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) for truly random numbers
+**`crypto.getRandomValues()`** [[docs]](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) \
+Use to generate cryptographic random numbers. If you're not sure, use this.
 
-[`Math.random()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) for pseudo-random numbers
+**`Math.random()`** [[docs]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) \
+Use to generate pseudo-random numbers
 
-<tr><th align=left>Time and date<td>
+<tr><th>Time and date<td>
 
-[Temporal API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal) via [temporal-polyfill](https://www.npmjs.com/package/temporal-polyfill)
+**Temporal API** [[docs]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal) \
+The new comprehensive builtin time, date, and calendar API for JS. Not yet available in all environments.
 
-<tr><th align=left>UUIDs<td>
+**[temporal-polyfill](https://www.npmjs.com/package/temporal-polyfill)** [[docs]](https://github.com/fullcalendar/temporal-polyfill#readme) \
+The best drop-in polyfill for the Temporal API. Use this until the native Temporal API is widely supported.
 
-[`crypto.randomUUID()`](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID) to generate v4 UUIDs.
+<tr><th>UUIDs<td>
 
-[uuid](https://www.npmjs.com/package/uuid) for comprehensive generation and parsing.
+**`crypto.randomUUID()`** [[docs]](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID) \
+Use this builtin if you only need to generate v4 UUIDs
 
-<tr><th align=left>Temporary files<td>
+**[uuid](https://www.npmjs.com/package/uuid)** [[docs]](https://github.com/uuidjs/uuid#api) \
+Use this if you need to generate more than just v4 UUIDs or do more than just generate UUIDs
 
-[tempy](https://www.npmjs.com/package/tempy)
+<tr><th>Temporary files<td>
 
-<tr><th align=left>Compression & decompression<td>
+**[tempy](https://www.npmjs.com/package/tempy)** [[docs]](https://github.com/sindresorhus/tempy#api) \
+Most popular temporary file & directory package for Node.js
 
-[Compression Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API)
+<details><summary>See also</summary>
 
-<tr><th align=left>HTTP requests<td>
+**`Deno.makeTempFile()`** [[docs]](https://docs.deno.com/examples/temporary_files/) \
+Use the native Deno API instead of importing an npm package if you're using Deno
 
-[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+</details>
 
-<tr><th align=left>Logging<td>
+<tr><th>Compression & decompression<td>
+
+**Compression Streams API** [[docs]](https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API) \
+Use this builtin if it supports your format
+
+**`node:zlib`** [[docs]](https://nodejs.org/api/zlib.html) \
+Use this Node.js builtin if it supports your format as a second choice
+
+<tr><th>Logging<td>
 
 _TODO_
 
@@ -45,50 +80,202 @@ _TODO_
 
 ## Tooling
 
-<table style="table-layout: fixed; width: 100%;">
-<tr><th align=left>JavaScript runtimes<td>
+<table>
+<tr><th>Desktop JavaScript runtimes<td>
 
-[Node.js](https://nodejs.org/) is the most popular.
+**[Node.js](https://nodejs.org/)** [[docs]](https://nodejs.org/docs/latest/api/) \
+The most popular desktop JavaScript runtime. If you're not sure, use this.
 
-[Deno](https://deno.com/) and [Bun](https://bun.sh/) offer more comprehensive Node.js-compatible toolchains. See the [Deno](./deno/) and [Bun](./bun/) pages for more ecosystem-specific information.
+**[Deno](https://deno.com/)** [[docs]](https://docs.deno.com/) \
+A comprehensive alternative JavaScript toolchain to Node.js & npm
 
-<tr><th align=left>Toolchain management<td>
+**[Bun](https://bun.sh/)** [[docs]](https://bun.sh/docs) \
+A faster Node.js & npm alternative with more features
 
-[nvm](https://github.com/nvm-sh/nvm) for Linux & macOS.
+<tr><th>Toolchain management<td>
 
-[nvm-windows](https://github.com/coreybutler/nvm-windows) for Windows.
+**[nvm](https://github.com/nvm-sh/nvm)** [[docs]](https://github.com/nvm-sh/nvm#usage) \
+Use this to manage Node.js versions for Linux & macOS
 
-<tr><th align=left>Code formatting<td>
+**[nvm-windows](https://github.com/coreybutler/nvm-windows)** [[docs]](https://github.com/coreybutler/nvm-windows#usage) \
+Use this as an alternative to nvm for Windows
 
-[Biome](https://biomejs.dev/)
+<details><summary>See also</summary>
 
-<tr><th align=left>Type checking<td>
+**`deno upgrade`** [[docs]](https://docs.deno.com/runtime/reference/cli/upgrade/) \
+Prefer always using the latest Deno version
 
-[TypeScript](https://www.typescriptlang.org/)
+**`bun upgrade`** [[docs]](https://bun.sh/docs/installation#upgrading) \
+Prefer always using the latest Bun version
 
-<tr><th align=left>Linting<td>
+</details>
 
-[Biome](https://biomejs.dev/)
+<tr><th>Code formatting<td>
 
-<tr><th align=left>Package managers<td>
+**[@biomejs/biome](https://www.npmjs.com/package/@biomejs/biome)** [[docs]](https://biomejs.dev/) \
+The faster alternative to Prettier that also does linting. Use this in modern projects.
 
-[npm](https://www.npmjs.com/)
+**[prettier](https://www.npmjs.com/package/prettier)** [[docs]](https://prettier.io/) \
+The most popular JavaScript code formatter
 
-Use [pnpm](https://pnpm.io/) if you need its extra features.
+<details><summary>See also</summary>
 
-<tr><th align=left>Testing<td>
+**`deno fmt`** [[docs]](https://docs.deno.com/runtime/reference/cli/fmt/) \
+Use the builtin Deno formatter if you're using Deno
 
-[`node:test`](https://nodejs.org/api/test.html)
+</details>
 
-Use [Vitest](https://vitest.dev/) if you need its extra features.
+<tr><th>Type checking<td>
+
+**[typescript](https://www.npmjs.com/package/typescript)** [[docs]](https://www.typescriptlang.org/) \
+De-facto standard type checker for JavaScript
+
+<details><summary>See also</summary>
+
+**`deno check`** [[docs]](https://docs.deno.com/runtime/reference/cli/check/) \
+Use Deno's TypeScript checking service if you're using Deno
+
+</details>
+
+<tr><th>Linting<td>
+
+**[@biomejs/biome](https://www.npmjs.com/package/@biomejs/biome)** [[docs]](https://biomejs.dev/) \
+The faster linter that also does formatting. Use this if you don't need custom plugins.
+
+**[eslint](https://www.npmjs.com/package/eslint)** [[docs]](https://eslint.org/) \
+The most popular JavaScript linter. Use this if you need to use plugins.
+
+<details><summary>See also</summary>
+
+**`deno lint`** [[docs]](https://docs.deno.com/runtime/fundamentals/linting_and_formatting/) \
+Deno's builtin linter toolkit. Supports plugins. Use this if you're using Deno.
+
+</details>
+
+<tr><th>Package managers<td>
+
+**[npm](https://www.npmjs.com/)** [[docs]](https://docs.npmjs.com/) \
+The bundled package manager that comes with Node.js. Use this if you're undecided.
+
+**[pnpm](https://pnpm.io/)** [[docs]](https://pnpm.io/motivation) \
+Use this if you need its extra features like dependency patching
+
+<details><summary>See also</summary>
+
+**`deno add`** [[docs]](https://deno.com/blog/your-new-js-package-manager) \
+Use the Deno package manager if you're using Deno
+
+**`bun pm`** [[docs]](https://bun.sh/docs/cli/pm) \
+Use the Bun package manager if you're using Bun
+
+</details>
+
+<tr><th>Testing<td>
+
+**`node:test`** [[docs]](https://nodejs.org/api/test.html) \
+The included Node.js test toolkit. Use this if possible. May use `node:assert` for assertions. Also works with Deno and Bun.
+
+**[vitest](https://www.npmjs.com/package/vitest)** [[docs]](https://vitest.dev/) \
+Vite's accompanying testing tool. Use this if you're using Vite or need its extra features like browser testing.
+
+<details><summary>See also</summary>
+
+**`Deno.test()`** [[docs]](https://docs.deno.com/runtime/fundamentals/testing/) \
+Deno's builtin testing toolkit. Use this if you're using only Deno.
+
+**`bun:test`** [[docs]](https://bun.sh/docs/cli/test)
+Bun's builtin testing toolkit. Use this if you're using only Bun.
+
+</details>
 
 </table>
 
 ## Math & science
 
-<table style="table-layout: fixed; width: 100%;">
-<tr><th align=left>Big decimal<td>
+<table>
+<tr><th>Big decimal<td>
 
-[js-big-decimal](https://www.npmjs.com/package/js-big-decimal)
+TODO
+
+<tr><th>Linear algebra<td>
+
+TODO
+
+<tr><th>DataFrames<td>
+
+TODO
 
 </table>
+
+## FFI & interop
+
+<table>
+<tr><th>C/C++ to JS<td>
+
+TODO
+
+<tr><th>Rust to JS<td>
+
+**[napi-rs]()** [[docs]](https://napi.rs/) \
+Use `#[napi]` annotations to expose Rust functions to JavaScript via the C Node-API
+
+**[wasm-bindgen]()** [[docs]](https://rustwasm.github.io/wasm-bindgen/) \
+Use `#[wasm_bindgen]` annotations to expose Rust functions to JavaScript via WebAssembly
+
+</table>
+
+## Networking
+
+<table>
+<tr><th>HTTP client<td>
+
+**Fetch API** [[docs]](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) \
+Node.js has `fetch()` builtin now. Use it.
+
+<tr><th>HTTP server<td>
+
+**[hono](https://www.npmjs.com/package/hono)** [[docs]](https://hono.dev/) \
+Rising standards-based web server framework
+
+**[express](https://www.npmjs.com/package/express)** [[docs]](https://expressjs.com/) \
+The most popular Node.js HTTP framework
+
+<tr><th>WebSockets<td>
+
+TODO
+
+</table>
+
+## CLIs
+
+<table>
+<tr><th>Argument parsing<td>
+
+**`util.parseArgs()`** [[docs]](https://nodejs.org/api/util.html#utilparseargsconfig) \
+Basic builtin argument parsing. Use this for local project scripts.
+
+TODO
+
+<tr><th>Globbing<td>
+
+**`fs.promises.glob()`** [[docs]](https://nodejs.org/api/fs.html#fspromisesglobpattern-options) \
+Node.js now has builtin globbing support. Use this unless you need more features.
+
+**[globby](https://www.npmjs.com/package/globby)** [[docs]](https://github.com/sindresorhus/globby#api) \
+Globber that deals with `.gitignore` too.
+
+<tr><th>File watching<td>
+
+**[watcher](https://www.npmjs.com/package/watcher)** [[docs]](https://github.com/fabiospampinato/watcher#usage) \
+The most complete file & directory watcher.
+
+</table>
+
+
+<footer style="margin-top: 3rem;">
+<p align=center style="font-size: smaller;">
+  <a href="https://github.com/jcbhmr/blessedjs.jcbhmr.com/blob/main/LICENSE">Creative Commons Zero v1.0 Universal License</a><br>
+  Made with ❤️ by <a href="https://jcbhmr.com/">Jacob Hummer</a><br>
+  <a href="https://github.com/jcbhmr/blessedjs.jcbhmr.com">Source code on GitHub.</a> Contributions welcome.
+</p>
+</footer>

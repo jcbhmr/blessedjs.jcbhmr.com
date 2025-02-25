@@ -16,6 +16,7 @@
   | <a href="https://blessedjs.jcbhmr.com/">Website</a>
 </p>
 
+💡 Inspired by [blessed.rs](https://blessed.rs) \
 🎯 Targetted recommendations for specific problem areas \
 🛠️ Benchmarking, UUIDs, Toolchain management, etc. \
 👨‍👩‍👧‍👦 [Open an issue to nominate a blessed library!](https://github.com/jcbhmr/blessedjs.jcbhmr.com/issues)
@@ -24,4 +25,4 @@
 
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=Markdown&logoColor=FFFFFF)
 
-This project uses plain GitHub-flavored Markdown. It's a Jekyll-based GitHub Pages site to https://blessedjs.jcbhmr.com/. There's not really a good way to preview things locally right now.
+This project uses plain GitHub-flavored Markdown. It's a Jekyll-based GitHub Pages site that deploys to https://blessedjs.jcbhmr.com/. There's not really a good way to preview things locally right now.
