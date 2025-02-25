@@ -19,7 +19,7 @@
 💡 Inspired by [blessed.rs](https://blessed.rs) \
 🎯 Targetted recommendations for specific problem areas \
 🛠️ Benchmarking, UUIDs, Toolchain management, etc. \
-[🙌 Open an issue to nominate a blessed library!](https://github.com/jcbhmr/blessedjs.jcbhmr.com/issues)
+[🙌 Open an issue to discuss, recommend, or suggest changes](https://github.com/jcbhmr/blessedjs.jcbhmr.com/issues)
 
 ## Development
 
