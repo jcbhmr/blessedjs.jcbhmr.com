@@ -170,7 +170,7 @@ Vite's accompanying testing tool. Use this if you're using Vite or need its extr
 **`Deno.test()`** [[docs]](https://docs.deno.com/runtime/fundamentals/testing/) \
 Deno's builtin testing toolkit. Use this if you're using only Deno.
 
-**`bun:test`** [[docs]](https://bun.sh/docs/cli/test)
+**`bun:test`** [[docs]](https://bun.sh/docs/cli/test) \
 Bun's builtin testing toolkit. Use this if you're using only Bun.
 
 </details>
