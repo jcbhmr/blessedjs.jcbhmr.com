@@ -2,28 +2,6 @@
 title: Blessed JavaScript
 ---
 
-<style>
-table {
-  table-layout: fixed;
-  width: 100%;
-}
-table th {
-  text-align: left;
-}
-table tr:first-child th {
-  width: 25%;
-}
-@media (max-width: 900px) {
-  table tr:first-child th {
-    width: 100%;
-  }
-  table tr {
-    display: flex;
-    flex-direction: column;
-  }
-}
-</style>
-
 **Sometimes you need an npm package.** This list of "blessed" JavaScript npm packages (and other tools) helps you quickly find the best one for common use cases.
 
 📚 Check out [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) and [sorrycc/awesome-javascript](https://github.com/sorrycc/awesome-javascript) for more comprehensive lists.

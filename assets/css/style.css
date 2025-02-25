@@ -1,0 +1,25 @@
+---
+---
+
+@import "jekyll-theme-primer";
+
+/* CHANGED */
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+table th {
+  text-align: left;
+}
+table tr:first-child th {
+  width: 25%;
+}
+@media (max-width: 900px) {
+  table tr:first-child th {
+    width: 100%;
+  }
+  table tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
