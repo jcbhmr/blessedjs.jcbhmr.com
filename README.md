@@ -7,8 +7,7 @@
 🙏 Unofficial blessed libraries for common tasks in JavaScript
 
 <p align=center>
-  <img width=550 src="./media/TODO">
-  TODO: Add image
+  <img width=550 src="https://github.com/user-attachments/assets/b59e1e5b-c275-46f2-a848-6209b4ea839e">
 </p>
 
 <p align=center>
