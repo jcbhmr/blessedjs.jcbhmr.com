@@ -12,8 +12,6 @@ that GitHub Pages uses doesn't like <style> tags in Markdown documents.
 
 📚 Check out [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) and [sorrycc/awesome-javascript](https://github.com/sorrycc/awesome-javascript) for more comprehensive lists.
 
-<sub>[🙌 Open an issue to discuss, recommend, or suggest changes](https://github.com/jcbhmr/blessedjs.jcbhmr.com/issues)</sub>
-
 ## General
 
 <table>
