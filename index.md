@@ -82,10 +82,10 @@ A faster Node.js & npm alternative with more features
 <tr><th>Toolchain management<td>
 
 **[nvm](https://github.com/nvm-sh/nvm)** [[docs]](https://github.com/nvm-sh/nvm#usage) \
-Use this to manage Node.js versions for Linux & macOS
+Use this to manage Node.js versions for Linux & macOS. Officially recommended by https://nodejs.org/en/download.
 
-**[nvm-windows](https://github.com/coreybutler/nvm-windows)** [[docs]](https://github.com/coreybutler/nvm-windows#usage) \
-Use this as an alternative to nvm for Windows
+**[fnm](https://github.com/Schniz/fnm)** [[docs]](https://github.com/Schniz/fnm#readme) \
+Fast cross-platform Node.js manager. Officially recommended by https://nodejs.org/en/download.
 
 <details><summary>See also</summary>
 
@@ -199,14 +199,15 @@ TODO
 <table>
 <tr><th>C/C++ to JS<td>
 
-TODO
+**[ffi-rs](https://www.npmjs.com/package/ffi-rs)** [[docs]](https://github.com/zhangyuang/node-ffi-rs#readme) \
+Runtime `dlopen()` with types for Node.js and friends. Use this on existing `.so`/`.dylib`/`.dll` dynamic libraries.
 
 <tr><th>Rust to JS<td>
 
-**[napi-rs]()** [[docs]](https://napi.rs/) \
-Use `#[napi]` annotations to expose Rust functions to JavaScript via the C Node-API
+**[napi-rs](https://www.npmjs.com/package/@napi-rs/cli)** [[docs]](https://napi.rs/) \
+Use `#[napi]` annotations to expose Rust functions to JavaScript via the C Node-API.
 
-**[wasm-bindgen]()** [[docs]](https://rustwasm.github.io/wasm-bindgen/) \
+**[wasm-bindgen](https://docs.rs/wasm-bindgen/latest/wasm_bindgen/)** [[docs]](https://rustwasm.github.io/wasm-bindgen/) \
 Use `#[wasm_bindgen]` annotations to expose Rust functions to JavaScript via WebAssembly
 
 </table>
@@ -227,9 +228,18 @@ Rising standards-based web server framework
 **[express](https://www.npmjs.com/package/express)** [[docs]](https://expressjs.com/) \
 The most popular Node.js HTTP framework
 
-<tr><th>WebSockets<td>
+<tr><th>WebSocket client<td>
 
-TODO
+**`WebSocket`** [[docs]](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) \
+Basic WebSocket client available in Node.js & friends and browsers. Single event stream. Use this for basic tasks.
+
+**[socket.io](https://www.npmjs.com/package/socket.io)** [[docs]](https://socket.io/) \
+Comprehensive popular WebSocket wrapper for servers and clients. Supports multiplexing. Use this if your server uses socket.io.
+
+<tr><th>WebSocket server<td>
+
+**[socket.io](https://www.npmjs.com/package/socket.io)** [[docs]](https://socket.io/) \
+Comprehensive popular WebSocket wrapper for servers and clients. Supports multiplexing.
 
 </table>
 
