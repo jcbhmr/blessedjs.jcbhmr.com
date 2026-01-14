@@ -177,6 +177,16 @@ Bun's builtin testing toolkit. Use this if you're using only Bun.
 
 </table>
 
+## Schema & validation
+
+<table>
+<tr><th>JSON schema<td>
+
+**[ajv](https://ajv.js.org/)** [[docs]](https://ajv.js.org/guide/getting-started.html) \
+The most popular JSON schema validation library.
+
+</table>
+
 ## Math & science
 
 <table>
